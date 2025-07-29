@@ -50,6 +50,7 @@ public class UserController {
     }
 
     // this endpoint is for getting user by id
+    // hello
     @GetMapping("/{id}")
     public ResponseEntity<UserEntity> getUserById(@PathVariable Long id){
         UserEntity user = userService.getUserById(id);
